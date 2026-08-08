@@ -1,6 +1,5 @@
 import streamlit as st
-from db import run_query
-
+from dashboard.db import run_query
 from queries import (
     VENUES_BY_COUNTRY,
     VENUES_BY_CITY,
