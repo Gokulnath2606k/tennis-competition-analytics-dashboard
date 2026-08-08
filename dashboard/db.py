@@ -1,8 +1,12 @@
-from sqlalchemy import create_engine
+import streamlit as st
 import pandas as pd
+from sqlalchemy import create_engine
+
+DATABASE_URL = st.secrets["DATABASE_URL"]
 
 engine = create_engine(
-    "mysql+pymysql://root:k.gokulnath2606@localhost:3306/tennis_analytics"
+    DATABASE_URL,
+    pool_pre_ping=True
 )
 
 def run_query(query):
