@@ -1,5 +1,5 @@
 import streamlit as st
-from dashboard.db import run_query
+from db import run_query
 from charts.country_charts import (
     players_country_chart,
     venues_country_chart,
