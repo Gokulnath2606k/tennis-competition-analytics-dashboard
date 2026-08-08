@@ -1,6 +1,5 @@
 import streamlit as st
-from db import run_query
-
+from dashboard.db import run_query
 from charts.competition_charts import (
     competition_category_chart,
     competition_type_chart,
