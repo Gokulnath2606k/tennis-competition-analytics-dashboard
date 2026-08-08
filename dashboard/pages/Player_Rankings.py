@@ -1,6 +1,5 @@
 import streamlit as st
-from db import run_query
-
+from dashboard.db import run_query
 from queries import (
     TOP_20_PLAYERS,
     TOP_PLAYERS_POINTS,
